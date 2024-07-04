@@ -64,3 +64,15 @@ footer {
 #bthree {
     background-color: #00FFFF;
 }
+
+@media only screen and (max-width: 600px) {
+    #Controls {
+        flex-direction: column;
+    }
+    #Content {
+        width: 100%;
+    }
+    #Content img {
+        width: 100%;
+    }
+}
