@@ -1,0 +1,66 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100vh;
+    background-color: #0000FF;
+}
+
+header {
+    height: 20%;
+    background-color: #00AAFF;
+    margin: 20px 40px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+section {
+    min-height: 80%;
+    background-color: #00AAFF;
+    margin: 20px 40px;
+    border-radius: 10px;
+}
+
+footer {
+    height: 20%;
+    background-color: #00AAFF;
+    margin: 20px 40px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#Content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#Content img, #Content h2 {
+    align-self: center;
+}
+
+#Controls {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#Controls button {
+    padding: 40px;
+    margin: 20px 20px;
+    border-radius: 5px;
+}
+
+#bone {
+    background-color: #DD00AA;
+}
+
+#btwo {
+    background-color: #FFFF00;
+}
+
+#bthree {
+    background-color: #00FFFF;
+}
