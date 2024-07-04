@@ -6,30 +6,34 @@
 
 html, body {
     height: 100vh;
-    background-color: #0000FF;
+    background-image: linear-gradient(to right, #AAAAAA, #DDDDDD);
 }
 
 header {
-    height: 20%;
-    background-color: #00AAFF;
-    margin: 20px 40px;
-    border-radius: 10px;
-    padding: 20px;
+    padding-top: 30px;
+    padding-right: 40px;
+    height: 40%;
+    background-image: url("../Chungus.WEBP");
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: end;
 }
 
 section {
     min-height: 80%;
-    background-color: #00AAFF;
-    margin: 20px 40px;
-    border-radius: 10px;
+    background-image: linear-gradient(to right, #DDDDDD, #FFFFFF);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 footer {
     height: 20%;
-    background-color: #00AAFF;
-    margin: 20px 40px;
-    border-radius: 10px;
-    padding: 20px;
+    background-image: linear-gradient(to left, #DDDDDD, #FFFFFF);
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-left: 20px;
 }
 
 #Content {
@@ -44,7 +48,8 @@ footer {
 
 #Controls {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 #Controls button {
@@ -66,8 +71,15 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
+    section {
+        flex-direction: column;
+    }
     #Controls {
         flex-direction: column;
+    }
+    #Controls button {
+        margin-top: 2px;
+        margin-bottom: 2px;
     }
     #Content {
         width: 100%;
