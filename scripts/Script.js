@@ -45,3 +45,13 @@ function memeFetch() {
     ajax.open("GET", "https://meme-api.com/gimme/memes", true);
     ajax.send();
 }
+
+function randomFetch() {
+    var ajax = new XMLHttpRequest();
+    ajax.addEventListener("load", function(){
+        var res = JSON.parse(this.responseText);
+        memeImage.src = res["url"];
+    });
+    ajax.open("Get", "https://meme-api.com/gimme", true);
+    ajax.send();
+}
